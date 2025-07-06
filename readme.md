@@ -1,4 +1,4 @@
-# 🛸 FPV Drone Signal Reverse Engineering Lab
+**# 🛸 FPV Drone Signal Reverse Engineering Lab**
 
 An advanced research project aimed at decoding and controlling undocumented WiFi-based FPV drones using raw UDP signals — without vendor SDKs or APIs.
 
@@ -13,15 +13,14 @@ Built from scratch by analyzing packet captures, isolating payloads, and testing
 
 ---
 
-## 📡 Project Overview
-
+**## 📡 Project Overview**
 This repository contains everything needed to reverse-engineer and control a toy-grade FPV drone via UDP packets, using nothing but WiFi, PCAP captures, and Python.
 
 This drone had no official documentation or development kit — all commands were deciphered manually from raw network captures.
 
 ---
 
-## 📁 Project Structure
+**## 📁 Project Structure**
 
 ```bash
 .
@@ -39,7 +38,7 @@ This drone had no official documentation or development kit — all commands wer
 └── .gitignore
 ```
 
-🧠 Techniques Applied
+**🧠 Techniques Applied**
 Payload Pattern Differentiation using Wireshark
 
 Socket-Level Packet Reconstruction via Python’s socket module
@@ -48,7 +47,7 @@ Live Payload Testing to identify effects (takeoff, throttle, etc.)
 
 Manual Reverse Engineering of undocumented drone protocols
 
-🚧 Current Capabilities
+**🚧 Current Capabilities**
 Feature	Status
 Takeoff command injection	✅ Working
 Motor activation payload	✅ Identified
@@ -56,7 +55,7 @@ Throttle pattern testing	🧪 In progress
 WASD flight control system	🔧 Planned
 Full protocol map	🔬 Building
 
-🧬 Future Plans
+**🧬 Future Plans**
 Build a GUI to control the drone like a flight simulator
 
 Add keyboard support (W, A, S, D, SPACE) using pynput
@@ -65,15 +64,17 @@ Expand payload mapping to include flips, pitch, yaw, etc.
 
 Auto-capture payloads from live PCAPs and generate tests
 
-📜 Background
+**📜 Background**
 This project was born from necessity. The full story is available in docs/origin_story.md.
 
+
 ```
-⚠️ Disclaimer
+**⚠️ Disclaimer**
 This project is for educational and research purposes only. Do not attempt to control drones you don’t own or operate them outside legal bounds.
 
 👤 Author
 Developed by Harsh —
 CEO @ SparkBee Technologies • Cybersecurity tinkerer • Drone hacker
-www.hsbofficial.com
 ```
+www.hsbofficial.com
+
