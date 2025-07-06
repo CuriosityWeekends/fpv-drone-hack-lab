@@ -49,11 +49,17 @@ Manual Reverse Engineering of undocumented drone protocols
 
 **🚧 Current Capabilities**
 Feature	Status
+
 Takeoff command injection	✅ Working
+
 Motor activation payload	✅ Identified
+
 Throttle pattern testing	🧪 In progress
+
 WASD flight control system	🔧 Planned
+
 Full protocol map	🔬 Building
+
 
 **🧬 Future Plans**
 Build a GUI to control the drone like a flight simulator
@@ -63,6 +69,7 @@ Add keyboard support (W, A, S, D, SPACE) using pynput
 Expand payload mapping to include flips, pitch, yaw, etc.
 
 Auto-capture payloads from live PCAPs and generate tests
+
 
 **📜 Background**
 This project was born from necessity. The full story is available in docs/origin_story.md.
