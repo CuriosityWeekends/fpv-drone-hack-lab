@@ -1,29 +1,27 @@
-# FPV Drone Signal Reverse Engineering Lab 🛸 [WORK IN PROGRESS]
+# 🛸 FPV Drone Signal Reverse Engineering Lab
 
-An advanced research prototype designed to analyze, decode, and replicate undocumented UDP-based control signals used by commercial FPV drones.
+An advanced research project aimed at decoding and controlling undocumented WiFi-based FPV drones using raw UDP signals — without vendor SDKs or APIs.
 
-Built from scratch by reverse-engineering proprietary communication protocols using raw packet captures, custom socket payloads, and iterative drone behavioral testing.
+Built from scratch by analyzing packet captures, isolating payloads, and testing direct socket injection to replicate flight control behavior.
 
-## 🚧 Project Overview
+---
 
-This repository serves as the foundation for a deep-dive exploration into real-time command and control (C2) signal replication of toy-grade FPV drones.
+[![MIT License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
+[![Python](https://img.shields.io/badge/python-3.9%2B-yellow.svg)](https://www.python.org/)
+[![Wireshark](https://img.shields.io/badge/tool-Wireshark-007ACC.svg)](https://www.wireshark.org/)
+[![Status](https://img.shields.io/badge/status-in%20active%20development-orange)]()
 
-### Core Goals:
-- 📡 Decode application-to-drone payloads via packet capture and protocol fingerprinting
-- 🔄 Simulate behavioral equivalents using direct UDP payload injection
-- 🔬 Analyze signal delta changes in throttle, yaw, pitch, and system arming
+---
 
-The challenge lies in *analyzing undocumented and proprietary byte-level payloads* in a real-time environment, without SDKs or vendor tooling. All experimentation is done blind, using PCAP inspection and pattern testing.
+## 📡 Project Overview
 
-## 🧠 Techniques Applied
+This repository contains everything needed to reverse-engineer and control a toy-grade FPV drone via UDP packets, using nothing but WiFi, PCAP captures, and Python.
 
-- **Payload Pattern Differentiation** using PCAP signal diffing
-- **Socket-Level Packet Reconstruction** via Python’s `socket` module
-- **Live Feedback Loop Testing** for real-world control replication
-- **Byte Manipulation Hypothesis Testing** to reverse-map behavioral triggers
-- **Protocol Reverse Engineering** using Wireshark, tshark, and byte delta decoding
+This drone had no official documentation or development kit — all commands were deciphered manually from raw network captures.
 
-## 🗂 Repository Structure
+---
+
+## 📁 Project Structure
 
 ```bash
 .
@@ -31,24 +29,47 @@ The challenge lies in *analyzing undocumented and proprietary byte-level payload
 │   ├── drone_blast_loop.py
 │   └── single_payload_test.py
 ├── captures/                # PCAP and extracted traffic samples
-│   └── RCFPVPro.pcap
-├── docs/                    # Protocol observations, payload analysis, tests
-│   └── payload_analysis.md
+│   └── RCFPVPro_takeoff.pcap
+├── docs/
+│   ├── origin_story.md      # The story behind this project
+│   ├── payload_analysis.md  # Manual payload decoding notes
+│   └── research_logbook.md  # Experimental logs (coming soon)
 ├── README.md
 ├── LICENSE
 └── .gitignore
+🧠 Techniques Applied
+Payload Pattern Differentiation using Wireshark
 
+Socket-Level Packet Reconstruction via Python’s socket module
 
----
-```
+Live Payload Testing to identify effects (takeoff, throttle, etc.)
 
-## 🧷 Authority Tagline
+Manual Reverse Engineering of undocumented drone protocols
 
-```md
-> ⚠️ This repository is intended for researchers, protocol engineers, and hardware tinkerers who are comfortable working at the byte level without access to official APIs or documentation.
+🚧 Current Capabilities
+Feature	Status
+Takeoff command injection	✅ Working
+Motor activation payload	✅ Identified
+Throttle pattern testing	🧪 In progress
+WASD flight control system	🔧 Planned
+Full protocol map	🔬 Building
 
----
-📡 Built for deep protocol exploration by [Harsh](https://github.com/hsbofficial1)  
-Founder @ SparkBee Technologies  
-Reverse engineer by instinct, builder by passion.   
-www.hsbofficial.com  
+🧬 Future Plans
+Build a GUI to control the drone like a flight simulator
+
+Add keyboard support (W, A, S, D, SPACE) using pynput
+
+Expand payload mapping to include flips, pitch, yaw, etc.
+
+Auto-capture payloads from live PCAPs and generate tests
+
+📜 Background
+This project was born from necessity. The full story is available in docs/origin_story.md.
+
+⚠️ Disclaimer
+This project is for educational and research purposes only. Do not attempt to control drones you don’t own or operate them outside legal bounds.
+
+👤 Author
+Developed by Harsh —
+CEO @ SparkBee Technologies • Cybersecurity tinkerer • Drone hacker
+www.hsbofficial.com
