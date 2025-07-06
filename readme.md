@@ -37,6 +37,8 @@ This drone had no official documentation or development kit — all commands wer
 ├── README.md
 ├── LICENSE
 └── .gitignore
+```
+
 🧠 Techniques Applied
 Payload Pattern Differentiation using Wireshark
 
@@ -66,6 +68,7 @@ Auto-capture payloads from live PCAPs and generate tests
 📜 Background
 This project was born from necessity. The full story is available in docs/origin_story.md.
 
+```
 ⚠️ Disclaimer
 This project is for educational and research purposes only. Do not attempt to control drones you don’t own or operate them outside legal bounds.
 
@@ -73,3 +76,4 @@ This project is for educational and research purposes only. Do not attempt to co
 Developed by Harsh —
 CEO @ SparkBee Technologies • Cybersecurity tinkerer • Drone hacker
 www.hsbofficial.com
+```
