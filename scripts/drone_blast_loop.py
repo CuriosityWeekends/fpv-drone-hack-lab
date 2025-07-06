@@ -1,0 +1,51 @@
+import socket
+import time
+import itertools
+
+DRONE_IP = "192.168.28.1"
+DRONE_PORT = 7080
+
+payloads_hex = [
+    "cc5a01820236b7",
+    "cc5a018309668080676d000a9974",
+    "cc5a018309668080767000069974",
+    "cc5a018309668080808000009974",
+    "cc5a018309668080b27200c09974",
+    "cc5a018309668080cb7200b99974",
+    "cc5a018309668080e66c008a9974",
+    "cc5a018309668080eb6b00809974",
+    "cc5a018309668080ed6a00879974",
+    "cc5a018309668080ef6a00859974",
+    "cc5a01830966566a8080003c9974",
+    "cc5a01830966567b8080002d9974",
+    "cc5a01830966567c8080002a9974",
+    "cc5a01830966567d8080002b9974",
+    "cc5a01830966567e808000289974",
+    "cc5a018309665680808000d69974",
+    "cc5a0183096656aa808000fc9974",
+    "cc5a01830966576a8080003d9974",
+    "cc5a01830966576b8080003c9974",
+    "cc5a01830966586b808000339974",
+    "cc5a01830966596c808000359974",
+    "cc5a01830966597d808000249974",
+    "cc5a018309665a6c808000369974",
+    "cc5a018309665c6d808000319974",
+    "cc5a018309665f6f808000309974",
+    "cc5a01830966616a8080000b9974",
+    "cc5a01830966619c808000fd9974",
+    "cc5a01830966636c8080000f9974",
+    "cc5a018309666370808000139974"
+]
+
+payloads = [bytes.fromhex(p) for p in payloads_hex]
+
+sock = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
+
+try:
+    for payload in itertools.cycle(payloads):
+        sock.sendto(payload, (DRONE_IP, DRONE_PORT))
+        time.sleep(0.001)  # Adjust for speed
+except KeyboardInterrupt:
+    print("Stopped.")
+finally:
+    sock.close()
