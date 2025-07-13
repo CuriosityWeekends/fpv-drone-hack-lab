@@ -1,0 +1,45 @@
+package c2;
+/* loaded from: /home/j/curio/fpv-drone-hack-lab/apk_hack/extracted/classes.dex */
+public abstract class m {
+    public static final int exo_controls_fastforward_description = 2131755105;
+    public static final int exo_controls_fullscreen_description = 2131755106;
+    public static final int exo_controls_hide = 2131755107;
+    public static final int exo_controls_next_description = 2131755108;
+    public static final int exo_controls_pause_description = 2131755109;
+    public static final int exo_controls_play_description = 2131755110;
+    public static final int exo_controls_previous_description = 2131755111;
+    public static final int exo_controls_repeat_all_description = 2131755112;
+    public static final int exo_controls_repeat_off_description = 2131755113;
+    public static final int exo_controls_repeat_one_description = 2131755114;
+    public static final int exo_controls_rewind_description = 2131755115;
+    public static final int exo_controls_show = 2131755116;
+    public static final int exo_controls_shuffle_off_description = 2131755117;
+    public static final int exo_controls_shuffle_on_description = 2131755118;
+    public static final int exo_controls_stop_description = 2131755119;
+    public static final int exo_controls_vr_description = 2131755120;
+    public static final int exo_download_completed = 2131755121;
+    public static final int exo_download_description = 2131755122;
+    public static final int exo_download_downloading = 2131755123;
+    public static final int exo_download_failed = 2131755124;
+    public static final int exo_download_notification_channel_name = 2131755125;
+    public static final int exo_download_removing = 2131755126;
+    public static final int exo_item_list = 2131755127;
+    public static final int exo_track_bitrate = 2131755128;
+    public static final int exo_track_mono = 2131755129;
+    public static final int exo_track_resolution = 2131755130;
+    public static final int exo_track_role_alternate = 2131755131;
+    public static final int exo_track_role_closed_captions = 2131755132;
+    public static final int exo_track_role_commentary = 2131755133;
+    public static final int exo_track_role_supplementary = 2131755134;
+    public static final int exo_track_selection_auto = 2131755135;
+    public static final int exo_track_selection_none = 2131755136;
+    public static final int exo_track_selection_title_audio = 2131755137;
+    public static final int exo_track_selection_title_text = 2131755138;
+    public static final int exo_track_selection_title_video = 2131755139;
+    public static final int exo_track_stereo = 2131755140;
+    public static final int exo_track_surround = 2131755141;
+    public static final int exo_track_surround_5_point_1 = 2131755142;
+    public static final int exo_track_surround_7_point_1 = 2131755143;
+    public static final int exo_track_unknown = 2131755144;
+    public static final int status_bar_notification_info_overflow = 2131755347;
+}

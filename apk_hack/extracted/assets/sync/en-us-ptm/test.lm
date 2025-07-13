@@ -1,0 +1,97 @@
+Language model created by QuickLM on Wed Jul  4 06:42:42 EDT 2018
+Copyright (c) 1996-2010 Carnegie Mellon University and Alexander I. Rudnicky
+
+The model is in standard ARPA format, designed by Doug Paul while he was at MITRE.
+
+The code that was used to produce this language model is available in Open Source.
+Please visit http://www.speech.cs.cmu.edu/tools/ for more information
+
+The (fixed) discount mass is 0.5. The backoffs are computed using the ratio method.
+This model based on a corpus of 15 sentences and 17 words
+
+\data\
+ngram 1=17
+ngram 2=30
+ngram 3=15
+
+\1-grams:
+-0.7782 </s> -0.3010
+-0.7782 <s> -0.2218
+-1.9542 BACKWALL -0.2218
+-1.9542 BACKWARD -0.2218
+-1.9542 BIKEWARD -0.2218
+-1.9542 LAND -0.2218
+-1.9542 FLY -0.2218
+-1.9542 FORWARD -0.2218
+-1.9542 LEFT -0.2218
+-1.9542 RAIT -0.2218
+-1.9542 RAIYT -0.2218
+-1.9542 RAYIT -0.2218
+-1.9542 RAYT -0.2218
+-1.9542 RIGHI -0.2218
+-1.9542 RIGHTY -0.2218
+-1.9542 RIYT -0.2218
+-1.9542 STOP -0.2218
+-1.9542 START -0.2218
+-1.9542 PHOTO -0.2218
+-1.9542 RECORD -0.2218
+
+\2-grams:
+-1.4771 <s> BACKWALL 0.0000
+-1.4771 <s> BACKWARD 0.0000
+-1.4771 <s> BIKEWARD 0.0000
+-1.4771 <s> LAND 0.0000
+-1.4771 <s> FLY 0.0000
+-1.4771 <s> FORWARD 0.0000
+-1.4771 <s> LEFT 0.0000
+-1.4771 <s> RAIT 0.0000
+-1.4771 <s> RAIYT 0.0000
+-1.4771 <s> RAYIT 0.0000
+-1.4771 <s> RAYT 0.0000
+-1.4771 <s> RIGHI 0.0000
+-1.4771 <s> RIGHTY 0.0000
+-1.4771 <s> RIYT 0.0000
+-1.4771 <s> STOP 0.0000
+-1.4771 <s> START 0.0000
+-1.4771 <s> PHOTO 0.0000
+-1.4771 <s> RECORD 0.0000
+-0.3010 BACKWALL </s> -0.3010
+-0.3010 BACKWARD </s> -0.3010
+-0.3010 BIKEWARD </s> -0.3010
+-0.3010 LAND </s> -0.3010
+-0.3010 FLY </s> -0.3010
+-0.3010 FORWARD </s> -0.3010
+-0.3010 LEFT </s> -0.3010
+-0.3010 RAIT </s> -0.3010
+-0.3010 RAIYT </s> -0.3010
+-0.3010 RAYIT </s> -0.3010
+-0.3010 RAYT </s> -0.3010
+-0.3010 RIGHI </s> -0.3010
+-0.3010 RIGHTY </s> -0.3010
+-0.3010 RIYT </s> -0.3010
+-0.3010 STOP </s> -0.3010
+-0.3010 START </s> -0.3010
+-0.3010 PHOTO </s> -0.3010
+-0.3010 RECORD </s> -0.3010
+
+\3-grams:
+-0.3010 <s> BACKWALL </s>
+-0.3010 <s> BACKWARD </s>
+-0.3010 <s> BIKEWARD </s>
+-0.3010 <s> LAND </s>
+-0.3010 <s> FLY </s>
+-0.3010 <s> FORWARD </s>
+-0.3010 <s> LEFT </s>
+-0.3010 <s> RAIT </s>
+-0.3010 <s> RAIYT </s>
+-0.3010 <s> RAYIT </s>
+-0.3010 <s> RAYT </s>
+-0.3010 <s> RIGHI </s>
+-0.3010 <s> RIGHTY </s>
+-0.3010 <s> RIYT </s>
+-0.3010 <s> STOP </s>
+-0.3010 <s> START </s>
+-0.3010 <s> PHOTO </s>
+-0.3010 <s> RECORD </s>
+
+\end\

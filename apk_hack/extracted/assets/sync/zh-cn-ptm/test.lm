@@ -1,0 +1,57 @@
+Language model created by QuickLM on Wed Mar  8 20:39:44 EST 2023
+Copyright (c) 1996-2010 Carnegie Mellon University and Alexander I. Rudnicky
+
+The model is in standard ARPA format, designed by Doug Paul while he was at MITRE.
+
+The code that was used to produce this language model is available in Open Source.
+Please visit http://www.speech.cs.cmu.edu/tools/ for more information
+
+The (fixed) discount mass is 0.5. The backoffs are computed using the ratio method.
+This model based on a corpus of 8 sentences and 10 words
+
+\data\
+ngram 1=10
+ngram 2=16
+ngram 3=8
+
+\1-grams:
+-0.7782 </s> -0.3010
+-0.7782 <s> -0.2218
+-1.6812 右飞 -0.2218
+-1.6812 向前进 -0.2218
+-1.6812 向后退 -0.2218
+-1.6812 左飞 -0.2218
+-1.6812 录像 -0.2218
+-1.6812 拍照 -0.2218
+-1.6812 起飞 -0.2218
+-1.6812 降落 -0.2218
+
+\2-grams:
+-1.2041 <s> 右飞 0.0000
+-1.2041 <s> 向前进 0.0000
+-1.2041 <s> 向后退 0.0000
+-1.2041 <s> 左飞 0.0000
+-1.2041 <s> 录像 0.0000
+-1.2041 <s> 拍照 0.0000
+-1.2041 <s> 起飞 0.0000
+-1.2041 <s> 降落 0.0000
+-0.3010 右飞 </s> -0.3010
+-0.3010 向前进 </s> -0.3010
+-0.3010 向后退 </s> -0.3010
+-0.3010 左飞 </s> -0.3010
+-0.3010 录像 </s> -0.3010
+-0.3010 拍照 </s> -0.3010
+-0.3010 起飞 </s> -0.3010
+-0.3010 降落 </s> -0.3010
+
+\3-grams:
+-0.3010 <s> 右飞 </s>
+-0.3010 <s> 向前进 </s>
+-0.3010 <s> 向后退 </s>
+-0.3010 <s> 左飞 </s>
+-0.3010 <s> 录像 </s>
+-0.3010 <s> 拍照 </s>
+-0.3010 <s> 起飞 </s>
+-0.3010 <s> 降落 </s>
+
+\end\

@@ -1,0 +1,5 @@
+#JSGF V1.0;
+
+grammar menu;
+
+public <item> = BACKWALL | BACKWARD | BIKEWARD | LAND | FLY | FORWARD | LEFT | RAIT | RAIYT | RAYIT | RAYT | RIGHI | RIGHTY | RIYT | STOP | START | PHOTO | RECORD;
